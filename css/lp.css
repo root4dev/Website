@@ -1,0 +1,361 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/** General styles and layout  -- **/
+body {
+	background: #777777;
+	color: #fff;
+	font-family: 'Droid Sans', sans-serif;
+}
+
+.container {
+	overflow: hidden;
+	/** To prvent pseudo-elements from sticking out  -- **/
+}
+
+.container svg {
+	display: block;
+}
+
+section {
+	position: relative;
+	padding: 10em 10%;
+	background: #fff;
+	color: #fff;
+	text-align: center;
+}
+
+section h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.8em;
+	font-weight: 400;
+}
+
+section p {
+	color: rgba(0,0,0,.3);
+	font-size: 1.3em;
+	line-height: 1.5;
+}
+
+.text:first-child {
+	text-align: right;
+}
+
+.text:nth-child(2) {
+	text-align: left;
+}
+
+.col-2 .column {
+	width: 49%;
+}
+@media (max-width: 767px) {
+  .col-2 .text p  {
+    display: none;
+  }
+}
+
+.col-3 .column {
+	padding: 0 1%;
+	width: 33%;
+	text-align: center;
+}
+
+.col-3 .column p {
+	padding: 1.4em;
+}
+
+.col-4 .column {
+  width: 49%;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .col-4 .text p  {
+    display: none;
+  }
+}
+
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+a {
+      text-decoration:none;
+ }
+
+section.color h2 {
+	color: #fff;
+}
+
+
+/*** Start ------------------------------------------------------------------------------------- ***/ 
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+/*** Slide 1 ------------------------------------------------------------------------------------- ***/
+.color {
+  background: -webkit-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* W3C */
+        
+}
+.color h2 {
+	font-size: 40px;
+  	font-weight: normal;
+  	color: #ffffff;
+  	text-align: left;
+  	font-family: 'Droid Sans', sans-serif;
+ 	margin-bottom: 35px;
+  	font-weight: 500;
+}
+.color p {
+	padding-right: 10px;
+	font-size: 20px;
+  	font-weight: normal;
+  	text-align: left;
+  	color: #ffffff;
+  	font-family: 'Droid Sans', sans-serif;
+ 	margin-bottom: 35px;
+ }
+.color .btn.btn-primary {
+  	padding: 10px 40px 10px 40px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+  	float: left;
+  	font-size: 16px;
+  	font-weight: normal;
+  	color: #ffffff;
+  	background-color: #3E3E3F;
+  	font-weight: 800;
+}
+.color .btn.btn-primary:hover,
+.color .btn.btn-primary:focus {
+  	background-color: #A7A9AC;
+}
+.color .btn.btn-primary:active,
+.color .btn.btn-primary.active {
+  	background-color: #3E3E3F;
+}
+
+@media (min-width: 880px) {
+  .color .btn.btn-primary {
+    margin-bottom: 30px;
+  }
+}
+
+/*** Slide 2 ------------------------------------------------------------------------------------- ***/
+.color2 {
+	background: #ffffff
+}
+.color2 h3 {
+	font-size: 20px;
+  	font-weight: normal;
+  	color: #3E3E3F;
+  	text-align: center;
+  	font-family: 'Droid Sans', sans-serif;
+ 	margin-bottom: 35px;
+  	font-weight: 500;
+}
+
+.color .btn.btn-primary {
+    padding: 10px 40px 10px 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: left;
+    font-size: 16px;
+    font-weight: normal;
+    color: #3E3E3F;
+    background-color: #3E3E3F;
+    font-weight: 800;
+}
+.color .btn.btn-primary:hover,
+.color .btn.btn-primary:focus {
+    background-color: #3E3E3F;
+}
+.color .btn.btn-primary:active,
+.color .btn.btn-primary.active {
+    background-color: #3E3E3F;
+}
+
+/*** Slide 3 ------------------------------------------------------------------------------------- ***/
+.color3 {
+	background: #00A69C;
+	padding-bottom: 20px;
+  	padding-top: 80px;
+}
+.color3 h2 {
+	font-size: 40px;
+  	font-weight: normal;
+  	color: #ffffff;
+  	text-align: left;
+  	font-family: 'Droid Sans', sans-serif;
+ 	margin-bottom: 35px;
+  	font-weight: 500;
+}
+.color3 p {
+	font-size: 20px;
+  	font-weight: normal;
+  	text-align: left;
+  	color: #ffffff;
+  	font-family: 'Droid Sans', sans-serif;
+ 	margin-bottom: 35px;
+ }
+.color3 .btn.btn-primary {
+  	padding: 10px 40px 10px 40px;
+	margin-bottom: 15px;
+  	float: left;
+  	margin-top: 24px;
+  	font-size: 16px;
+  	font-weight: normal;
+  	color: #faa619;
+  	background-color: #ffffff;
+  	font-weight: 800;
+}
+.color3 .btn.btn-primary:hover,
+.color3 .btn.btn-primary:focus {
+  	background-color: #A7A9AC;
+}
+.color3 .btn.btn-primary:active,
+.color3 .btn.btn-primary.active {
+  	background-color: #3E3E3F;
+}
+
+
+
+
+
+/*** Slide 4 ------------------------------------------------------------------------------------- ***/
+.color4 {
+	background: #ffffff;
+	padding-bottom: 50px;
+  padding-top: 140px;
+}
+.color4 h2 {
+	font-size: 40px;
+  	font-weight: normal;
+  	color: #2E3191;
+  	text-align: left;
+  	font-family: 'Droid Sans', sans-serif;
+ 	  margin-bottom: 35px;
+  	font-weight: 500;
+    text-align: right;
+}
+.color4 p {
+	font-size: 20px;
+  	font-weight: normal;
+  	text-align: left;
+  	color: #2E3191;
+  	font-family: 'Droid Sans', sans-serif;
+ 	  margin-bottom: 35px;
+    text-align: right;
+ }
+.color4 .btn.btn-primary {
+  	padding: 10px 40px 10px 40px;
+	margin-bottom: 15px;
+  	float: left;
+  	margin-top: 24px;
+  	font-size: 16px;
+  	font-weight: normal;
+  	color: #f07b23;
+  	background-color: #ffffff;
+  	font-weight: 800;
+}
+.color4 .btn.btn-primary:hover,
+.color4 .btn.btn-primary:focus {
+  	background-color: #A7A9AC;
+}
+.color4 .btn.btn-primary:active,
+.color4 .btn.btn-primary.active {
+  	background-color: #3E3E3F;
+}
+/*** Footer -------------------------- ***/
+
+.color5 {
+   {
+  background: -webkit-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #7474BF 10%, #348AC7 90%); /* W3C */ 
+}
+{
+  padding-bottom: 20px;
+  padding-top: 80px;
+}
+.color5 h2 {
+  font-size: 40px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Droid Sans', sans-serif;
+  margin-bottom: 35px;
+    font-weight: 500;
+}
+.color5 .btn.btn-primary {
+    padding: 10px 40px 10px 40px;
+  margin-bottom: 15px;
+    float: left;
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #faa619;
+    background-color: #ffffff;
+    font-weight: 800;
+}
+.color5 .btn.btn-primary:hover,
+.color5 .btn.btn-primary:focus {
+    background-color: #A7A9AC;
+}
+.color5 .btn.btn-primary:active,
+.color5 .btn.btn-primary.active {
+    background-color: #3E3E3F;
+}
+
+
+/*** Finish ------------------------------------------------------------------------------------- ***/
+
+/* Media Queries for the layout */
+@media screen and (max-width: 68em) {
+	section {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 54em) {
+	.column {
+		display: block;
+		width: 100% !important;
+	}
+
+	.text:first-child,
+	.text:nth-child(2) {
+		text-align: center;
+	}
+
+	.icon {
+		margin: 0 auto;
+	}
+
+	.col-2 .column:first-child .icon {
+		margin: 0 auto 50px;
+	}
+
+	.col-2 .column:nth-child(2) .icon {
+		margin: 50px auto 0;
+	}
+}
